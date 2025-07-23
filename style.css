@@ -134,18 +134,20 @@ footer {
     color: white;
     display: flex;
     justify-content: center;
-    padding: 20px 0px;
+    align-items: center;
+    padding: 20px;
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 20px;
     font-size: 16px;
-    height: 50px;
+    gap: 20px; /* space between the two paragraphs */
+    flex-wrap: wrap; /* responsive on small screens */
 }
 
 footer p {
-    margin: 0;
     font-size: 14px;
+    margin: 0;
+    display: inline-block;
 }
 
 footer a {
@@ -157,5 +159,5 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-    color: #ffc107; /* improved contrast */
-}  
+    color: #ffc107;
+}
